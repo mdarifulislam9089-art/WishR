@@ -1,0 +1,185 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>শুভ ২৩তম জন্মদিন রিয়া! 🩺🎂</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+            z-index: 10;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 35px 25px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nurse-badge {
+            display: inline-block;
+            background: #ff4757;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(255, 71, 87, 0.3);
+        }
+        h1 {
+            color: #2e86de;
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+        .age-tag {
+            color: #ff4757;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .heartbeat {
+            display: inline-block;
+            animation: beat 1s infinite alternate;
+            color: #e84118;
+        }
+        @keyframes beat {
+            to { transform: scale(1.2); }
+        }
+        p.message {
+            color: #485460;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin: 20px 0;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .btn {
+            background: linear-gradient(45deg, #ff4757, #ff6b81);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
+            outline: none;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 71, 87, 0.6);
+        }
+        /* Flying Elements */
+        .balloon {
+            position: absolute;
+            bottom: -150px;
+            width: 35px;
+            height: 45px;
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            animation: flyUp 7s infinite ease-in;
+            z-index: 1;
+            opacity: 0.8;
+        }
+        @keyframes flyUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0.9; }
+            100% { transform: translateY(-120vh) rotate(25deg); opacity: 0; }
+        }
+        .hidden-wish {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #f1f2f6;
+            border-radius: 15px;
+            border-left: 4px solid #ff4757;
+            color: #2f3542;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Balloons -->
+    <div class="balloon" style="left: 8%; background: #ff4757; animation-delay: 0s;"></div>
+    <div class="balloon" style="left: 25%; background: #2e86de; animation-delay: 2.5s;"></div>
+    <div class="balloon" style="left: 50%; background: #1dd1a1; animation-delay: 1s;"></div>
+    <div class="balloon" style="left: 72%; background: #feca57; animation-delay: 3.5s;"></div>
+    <div class="balloon" style="left: 88%; background: #ff6b6b; animation-delay: 1.8s;"></div>
+
+    <div class="container">
+        <div class="card">
+            <div class="nurse-badge">👩‍⚕️ Careing Angel of Life 🩺</div>
+            <h1>শুভ জন্মদিন, রিয়া! 🎂</h1>
+            <div class="age-tag">✨ Happy 23rd Birthday ✨</div>
+            
+            <p class="message">
+                যার হাতের ছোঁয়ায় মানুষের কষ্ট দূর হয়, আর ভালোবাসায় জীবনে ফিরে আসে নতুন আলো-- সেই প্রিয় <b>রিয়া</b>-কে ২৩তম জন্মদিনের অশেষ শুভেচ্ছা! <br><br>
+                একজন নার্স হিসেবে মানুষের সেবা করার সুন্দর মন মানসিকতা তোমার জীবনকে সবসময় আলোকিত রাখুক। নিজের খেয়াল রেখো এবং জীবনের প্রতিটি পদক্ষেপে সফল হও! <span class="heartbeat">❤️</span>
+            </p>
+
+            <button class="btn" onclick="celebrate()">উৎসব শুরু করুন 🎉</button>
+
+            <div id="secretWish" class="hidden-wish">
+                🎁 <b>বিশেষ বার বার্তা:</b> রিয়া, তোমার জীবনের আগামী দিনগুলো হাসি, আনন্দ আর সুন্দর মুহূর্তে ভরে উঠুক। Happy 23rd Birthday again! 🎈Zahid_Mahmud✨
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        function celebrate() {
+            // Reveal secret wish
+            document.getElementById('secretWish').style.display = 'block';
+
+            // Confetti Explosion
+            confetti({
+                particleCount: 120,
+                spread: 80,
+                origin: { y: 0.6 }
+            });
+
+            // Extra floating confetti
+            setTimeout(() => {
+                confetti({
+                    particleCount: 50,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 }
+                });
+                confetti({
+                    particleCount: 50,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 }
+                });
+            }, 300);
+        }
+    </script>
+</body>
+</html>
